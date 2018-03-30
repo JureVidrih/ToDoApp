@@ -1,0 +1,123 @@
+* {
+    font-family: ubuntu;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, deepskyblue, beige);
+}
+
+#widget {
+    display: block;
+    width: 440px;
+    height: 440px;
+    margin: 100px auto;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+#top-bar {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(0, 118, 214);
+    padding: 14px 15px 0 15px;
+    color: white;
+    font-size: 1.75rem;
+}
+
+#title {
+    display: inline-block;
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+#add-icon {
+    display: block;
+    float: right;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    opacity: 1.0;
+    transition: opacity ease-out .05s;
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+#add-icon:hover {
+    opacity: 0.8;
+}
+
+#content {
+    width: 100%;
+    heighT: 320px;
+}
+
+#add-new-todo {
+    width: 100%;
+    height: 60px;
+    padding-left: 15px;
+    background-color: #fafafa;
+    border: none;
+    color: #777;
+    font-size: 1.5rem;
+}
+
+#add-new-todo:focus {
+    border: 4px solid deepskyblue;
+    color: deepskyblue;
+}
+
+.item {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: #777;
+    font-size: 1.25rem;
+}
+
+.item:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.item .remove-icon {
+    width: 0px;
+    margin-right: 10px;
+    height: 100%;
+    float: left;
+    padding-top: 4px;
+    background-color: rgb(233, 30, 30);
+    background-position: center center;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    opacity: 0.0;
+
+    transition: all ease-out .1s;
+
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+.item .todo-name {
+    padding: 8px 0 0 0;
+}
+
+.item .todo-name--done {
+    text-decoration: line-through;
+    opacity: 0.35;
+}
